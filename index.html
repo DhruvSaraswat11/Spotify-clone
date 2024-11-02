@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="main flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded">
+         <div class="close"><i class="ri-close-fill"></i></div>
+          <div class="logo invert"><img src="logo.svg" alt="logo" /></div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded">
+          <div class="flex playlist">
+            <img class="invert" src="playlist.svg" alt="" />
+            <h3>Your Library</h3>
+          </div>
+          <div class="songs">
+            <ul>
+              <!-- <li><i class="ri-folder-music-line"></i></li> -->
+            </ul>
+          </div>
+          <div class="footer">
+            <a href="#"><span>Legal</span></a>
+            <a href="#"><span>Privacy center</span></a>
+            <a href="#"><span>Cookies</span></a>
+            <a href="#"><span>About ads</span></a>
+            <a href="#"><span>Accesibility</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburger"><i class="ri-menu-line"></i></div>
+            <div class="arrows"><i class="ri-code-s-line"></i></div>
+          </div>
+          <div class="search">
+         
+          <input type="text" placeholder="What do you wants to play ?">
+          </div>
+          <div class="button">
+            <button class="signup">Sign up</button>
+            <button class="login">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlist</h1>
+          <div class="cardcontainer">
+           
+          </div> 
+        </div>
+        <div class="playbar">
+          <div class="informa">
+            <div class="songinfo"></div>
+            <div class="playsongs">
+              <button id="leftskip"><i class="ri-skip-left-fill"></i></button>
+              <button id="play"></button>
+              <button id="rightskip"><i class="ri-skip-right-fill"></i></button>
+            </div>
+            <div class="volumebar">
+            <div class="volume"> <i class="ri-volume-up-line"></i> </div>
+             <div class="range"><input type="range" name="volume" ></div>
+          </div>
+            <div class="time"></div>
+          </div>
+          <div class="seekbar"><div class="circle"></div></div>
+          <div class="songtime"></div>
+        </div>
+      </div>
+      <!-- <div class="otherinfo"></div> -->
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
