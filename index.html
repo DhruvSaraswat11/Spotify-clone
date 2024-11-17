@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="main flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded">
+          <div class="close"><i class="ri-close-fill"></i></div>
+          <div class="logo"><img src="logo2.svg" alt="logo" /></div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded">
+          <div class="flex playlist">
+            <img class="invert" src="playlist.svg" alt="" />
+            <h3>Your Library</h3>
+          </div>
+          <div class="songs">
+            <ul>
+              <!-- <li><i class="ri-folder-music-line"></i></li> -->
+            </ul>
+          </div>
+          <div class="footer">
+            <a href="#"><span>Legal</span></a>
+            <a href="#"><span>Privacy center</span></a>
+            <a href="#"><span>Cookies</span></a>
+            <a href="#"><span>About ads</span></a>
+            <a href="#"><span>Accesibility</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburger"><i class="ri-menu-line"></i></div>
+            <div class="arrows"><i class="ri-code-s-line"></i></div>
+          </div>
+          <div class="round"></div>
+          <div class="button">
+            <button class="signup">Sign up</button>
+            <button class="login">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h1>LogX Playlist</h1>
+          <div class="cardcontainer"></div>
+        </div>
+        <div class="playbar">
+          <div class="informa">
+            <div class="songinfo"></div>
+            <div class="playsongs">
+              <button id="leftskip"><i class="ri-skip-left-fill"></i></button>
+              <button id="play"></button>
+              <button id="rightskip"><i class="ri-skip-right-fill"></i></button>
+            </div>
+            <div class="volumebar">
+              <div class="volume"><i class="ri-volume-up-line"></i></div>
+              <div class="range"><input type="range" name="volume" /></div>
+            </div>
+            <div class="time"></div>
+          </div>
+          <div class="seekbar"><div class="circle"></div></div>
+          <div class="songtime"></div>
+        </div>
+      </div>
+    </div>
+    <div class="useful">
+      <div class="otherinfo">
+        <div class="item1 common">Company</div>
+        <div class="item2 common">Communities</div>
+        <div class="item3 common">Useful links</div>
+        <div class="item4 common">LogX plans</div>
+        <div class="item5 c1">About</div>
+        <div class="item6 c1">For Artists</div>
+        <div class="item6 c1">Support</div>
+        <div class="item7 c1">Premium Individual</div>
+        <div class="item8 c1">Jobs</div>
+        <div class="item9 c1">Developers</div>
+        <div class="item10 c1">Free Mobile App</div>
+        <div class="item11 c1">Premium Duo</div>
+        <div class="item12 c1">For the Record</div>
+        <div class="item13 c1">Advertising</div>
+        <div class="item14 c1">Premium Family</div>
+        <div class="class15"></div>
+        <div class="item17 c1">Investors</div>
+        <div class="item16 c1">Premium Student</div>
+      </div>
+      <div class="mycontacts">
+        <div class="insta">
+          <a href="" target="_blank"><i class="ri-instagram-line"></i></a>
+        </div>
+        <div class="telegram">
+          <a href="https://t.me/Thunder8590" target="_blank"><i class="ri-telegram-fill"></i></a>
+        </div>
+        <div class="email"><a href="" ><i class="ri-mail-line"></i></a></div>
+      </div>
+      <div class="sign">
+        <div class="text">
+        <p>Preview of LogX</p>
+        <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+      </div>
+        <button id="freesign">sign up free</button>
+      </div>
+    </div>
+  </body>
+  <script src="script1.js"></script>
+</html>
