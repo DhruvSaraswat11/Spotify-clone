@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <!-- Define Gradient for Text Color -->
+  <defs>
+    <linearGradient id="gradientText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e; stop-opacity:1" />  <!-- Dark Blue -->
+      <stop offset="50%" style="stop-color:#2196f3; stop-opacity:1" />  <!-- Lighter Blue -->
+      <stop offset="100%" style="stop-color:#0d47a1; stop-opacity:1" /> <!-- Darker Blue -->
+    </linearGradient>
+
+    <!-- Define Gradient for Icon Background -->
+    <linearGradient id="gradientIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6600; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff0000; stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Icon Shape Animation -->
+    <style>
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+      }
+
+      #icon {
+        animation: pulse 2s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Icon (Abstract Play Button with Waves) -->
+  <g id="icon">
+    <!-- Outer Circle -->
+    <circle cx="100" cy="100" r="50" fill="none" stroke="white" stroke-width="8" />
+    <!-- Play Triangle -->
+    <polygon points="90,70 90,130 150,100" fill="white" />
+    <!-- Sound Waves (Arc-like lines) -->
+    <path d="M150,100 Q180,90 220,100" fill="transparent" stroke="white" stroke-width="4" />
+    <path d="M150,100 Q180,110 220,120" fill="transparent" stroke="white" stroke-width="4" />
+  </g>
+
+  <!-- Text: "LogX" (Gradient Blue, Bold) -->
+  <text x="180" y="120" font-family="Arial, sans-serif" font-size="70" font-weight="bolder" text-anchor="start" fill="url(#gradientText)">
+    LoganX
+  </text>
+</svg>
+
+
