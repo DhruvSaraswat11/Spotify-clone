@@ -9,7 +9,7 @@ function convertSecondsToMinutesSeconds(totalSeconds) {
 }
 
 async function getsongs(folder) {
-  let a = await fetch(`https://github.com/DhruvSaraswat11/Spotify-clone/${folder}/`);
+  let a = await fetch(`https://api.github.com/repositories/882205105/contents/${folder}/`);
   let response = await a.text();
   // console.log(response)
   let div = document.createElement("div");
@@ -27,7 +27,7 @@ async function getsongs(folder) {
   return songs;
 }
 async function displayalbums() {
-  let a = await fetch(`https://github.com/DhruvSaraswat11/Spotify-clone/songs/`);
+  let a = await fetch(`https://api.github.com/repositories/882205105/contents/songs/`);
   let response = await a.text();
   // console.log(response)
   let div = document.createElement("div");
@@ -35,7 +35,7 @@ async function displayalbums() {
 
   let p = div.querySelectorAll("a");
   for (let i = 0; i < p.length; i++) {
-    if (p[i].href.includes("https://github.com/DhruvSaraswat11/Spotify-clone/songs/")) {
+    if (p[i].href.includes("https://api.github.com/repositories/882205105/contents/songs/")) {
       //   console.log(e)
       let folder = p[i].href.split("/").slice(-1);
       // console.log(folder);
